@@ -1,0 +1,2 @@
+# SearchBundle
+SearchBundle for ElasticaBundle
