@@ -1,0 +1,16 @@
+{
+    "name": "manugarciaes/search-bundle",
+    "type": "symfony-bundle",
+    "description": "Easy way to integration ElasticaBundle in your project with filters, aggregations, ...",
+    "keywords": ["elastica", "elasticsearch", "fos", "elasticabundle", "elasticbundle", "search"],
+    "homepage": "https://github.com/manugarciaes/SearchBundle",
+    "license": "MIT",
+    "authors": [
+      { "name": "Manuel Garcia", "email": "manugarciaes@gmail.com" },
+      { "name": "Atresmedia Hub Factory", "homepage": "http://www.atresmediahf.com/" }
+    ],
+    "require": {
+	    "symfony/symfony": "~2.7.7",
+        "friendsofsymfony/elastica-bundle": "^3.1"
+    }
+}

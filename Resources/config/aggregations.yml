@@ -1,0 +1,10 @@
+# Elastic Search Filters
+services:
+    ## example
+    elastic.search.aggregation.categories:
+      class: Elastica\Aggregation\Terms
+      arguments:
+        - %name%
+      calls:
+        - [setField, ['%category_field%']]
+        - [setSize, [%category_size%]]

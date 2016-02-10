@@ -1,0 +1,11 @@
+# Elastic Search Filters
+services:
+
+    ## FILTER EXAMPLE
+    elastic.search.filter.enabled:
+      class: SearchBundle\Filter\ObjectFilter
+      calls:
+            - [setField, ['enabled']]
+            - [setValue, [true]]
+
+#"@=service('product.search.filters').getCategory()"

@@ -1,0 +1,15 @@
+services:
+  #############################
+  ##
+  ##  EXAMPLE
+  ##
+  ############################
+  article.search:
+    class: SearchBundle\Services\SearchService
+    arguments:
+      - "@fos_elastica.manager.orm"
+      - %elastica_entity%
+      - ['%search_string%']
+    calls:
+      - [addFilter, ['@elastic.search.filter.enabled']]
+      - [addAggregation, ['@elastic.search.aggregation.categories']]
